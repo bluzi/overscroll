@@ -1,6 +1,6 @@
 {
-  "name": "overscroll",
-  "version": "1.0.0",
+  "name": "overscrolljs",
+  "version": "1.0.1",
   "description": "Detect Mac touchpad overscroll on browser",
   "main": "overscroll.js",
   "scripts": {
