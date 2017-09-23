@@ -16,7 +16,7 @@ You can add as many listeners as you want simply by calling the overscroll funct
 ### Via jsDeliver (Recommended)
 Add the following script tag to your HTML file:
 ```html
-<script src="https://cdn.jsdelivr.net/npm/overscrolljs@1.0.1/overscroll.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/overscrolljs@latest/overscroll.min.js"></script>
 ```
 
 ### Via NPM
