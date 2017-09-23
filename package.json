@@ -1,0 +1,26 @@
+{
+  "name": "overscroll",
+  "version": "1.0.0",
+  "description": "Detect Mac touchpad overscroll on browser",
+  "main": "overscroll.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bluzi/overscroll.git"
+  },
+  "keywords": [
+    "overscroll",
+    "mac",
+    "mabook",
+    "touchpad",
+    "scroll"
+  ],
+  "author": "Eliran Pe'er",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bluzi/overscroll/issues"
+  },
+  "homepage": "https://github.com/bluzi/overscroll#readme"
+}
