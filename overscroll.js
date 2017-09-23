@@ -1,4 +1,10 @@
 window.overscroll = function(callback) {
+    if (navigator.platform !== 'MacIntel'
+        || (battery.charging && battery.chargingTime === 0)) {
+            // Not a MacBook
+        return;
+    }
+
     if (!window.overscroll.callbacks) {
         window.overscroll.callbacks = [callback];
 
