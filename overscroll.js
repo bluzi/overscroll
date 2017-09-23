@@ -2,14 +2,20 @@ window.overscroll = function(callback) {
     if (!window.overscroll.callbacks) {
         window.overscroll.callbacks = [callback];
 
-        var mostReventScrollEvent = 0;        
+        var mostReventScrollEvent = new Date().getTime();        
 
-        window.addEventListener('mousewheel', function(e) {
+        window.addEventListener('wheel', function(e) {
             var timeOfEvent = new Date().getTime();
-            setTimeout(() => {
-                if ((timeOfEvent - 1000) > mostReventScrollEvent) {
+            var direction = e.deltaY < 0 ? 'up' : 'down';
+
+            setTimeout(function() {
+                if ((timeOfEvent - 1000) > mostReventScrollEvent 
+                        && (document.documentElement.scrollTop === 0 && direction === 'up')
+                        || ((window.innerHeight + window.scrollY) >= document.body.scrollHeight && direction === 'down')) {
                     for(var key in window.overscroll.callbacks) {
-                        window.overscroll.callbacks[key]();
+                        window.overscroll.callbacks[key]({
+                            direction: direction
+                        });
                     }
                 }
             });
