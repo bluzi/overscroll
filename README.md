@@ -1,35 +1,39 @@
 # Overscroll JS
-*Overscroll* detects when a user who uses one of Apple's Touchpads (MacBook's Touchpad or a Magic Touchpad) scrolls outside the bounds of a webpage, and fires a callback.
 
-It is easy to set, has no dependencies and weighs less than 400 bytes minified. 
+**What it does**: Overscroll detects when a user using Apple's touchpad feature (Macbook Touchpad or Magic Touchpad) scrolls outside the bounds of the webpage, firing a callback in your application.
+It's extremely lightweight, has no dependencies, and is less than 400 bytes when minified.
 
-## Usage
-After installing *Overscroll*, test it using the following code:
-
+### Example:
 ```javascript
-overscroll(() => console.log('Overscroll Detected'));
+overscroll(() => 
+	console.log('Overscroll Detected')
+);
 ```
 
-You can add as many listeners as you want simply by calling the overscroll function again.
 
 ## Installation
+
 ### Via jsDeliver (Recommended)
+
+
 Add the following script tag to your HTML file:
+
 ```html
 <script src="https://cdn.jsdelivr.net/npm/overscrolljs@latest/overscroll.min.js"></script>
 ```
 
 ### Via NPM
+
 Navigate to your project's directory, and execute the following command:
 
-`$ npm i -S overscrolljs`
+	$ npm i -S overscrolljs
 
-Then, embed the script in your HTML using a script tag: 
-
+Then, embed the script in your HTML using a script tag:
 ```html
-    <scirpt src="node_modules/overscrolljs/overscroll.min.js"></script>
+<script src="node_modules/overscrolljs/overscroll.min.js"></script>
 ```
+___
 
-## Contribution
-Feel free to create PRs, I will try to merge them ASAP.
+### Contributing
 
+[Check for open issues](https://github.com/bluzi/overscroll/issues) or add your own features by starting a pull request.
