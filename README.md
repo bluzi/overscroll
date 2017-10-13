@@ -1,7 +1,7 @@
 # Overscroll JS
 *Overscroll* detects when a user who uses one of Apple's Touchpads (MacBook's Touchpad or a Magic Touchpad) scrolls outside the bounds of a webpage, and fires a callback.
 
-It is easy to set, has no dependencies and weights less than 400 bytes minified. 
+It is easy to set, has no dependencies and weighs less than 400 bytes minified. 
 
 ## Usage
 After installing *Overscroll*, test it using the following code:
