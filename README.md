@@ -28,6 +28,12 @@ Navigate to your project's directory, and execute the following command:
 
 	$ npm i -S overscrolljs
 
+### Via Yarn
+
+Navigate to your project's directory, and execute the following command:
+
+	$ yarn add overscrolljs
+
 Then, embed the script in your HTML using a script tag:
 ```html
 <script src="node_modules/overscrolljs/overscroll.min.js"></script>
