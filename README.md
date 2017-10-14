@@ -1,6 +1,6 @@
 # Overscroll JS
 
-**What it does**: Overscroll detects when a user using Apple's touchpad feature (Macbook Touchpad or Magic Touchpad) scrolls outside the bounds of the webpage, firing a callback in your application.
+**What it does**: Overscroll detects when a user, using Apple's touchpad feature (Macbook Touchpad or Magic Touchpad), scrolls outside the bounds of a webpage. When they do Overscroll can fire a callback function in your application.
 It's extremely lightweight, has no dependencies, and is less than 400 bytes when minified.
 
 ### Example:
@@ -24,7 +24,7 @@ Add the following script tag to your HTML file:
 
 ### Via NPM
 
-Navigate to your project's directory, and execute the following command:
+Navigate to your project's directory and install the Overscroll, adding it to your package.json:
 
 	$ npm i -S overscrolljs
 
