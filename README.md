@@ -18,7 +18,7 @@ overscroll(() =>
 Add the following script tag to your HTML file:
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/overscrolljs@latest/dist/overscroll.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/overscrolljs@latest/dist/overscroll.umd.min.js"></script>
 ```
 
 ### Via NPM or [Yarn](https://yarnpkg.com)
@@ -48,7 +48,7 @@ var overscroll = require('overscroll.js').default;
 
 Alternatively you can embed the script in your HTML using a script tag:
 ```html
-<script src="node_modules/overscrolljs/dist/overscroll.min.js"></script>
+<script src="node_modules/overscrolljs/dist/overscroll.umd.min.js"></script>
 ```
 ___
 
