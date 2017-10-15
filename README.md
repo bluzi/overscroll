@@ -1,45 +1,65 @@
 # Overscroll JS
 
 **What it does**: Overscroll detects when a user, using Apple's touchpad feature (Macbook Touchpad or Magic Touchpad), scrolls outside the bounds of a webpage. When they do Overscroll can fire a callback function in your application.
-It's extremely lightweight, has no dependencies, and is less than 400 bytes when minified.
+It's extremely lightweight, has no dependencies, and is less than 550 bytes when minified and gzipped.
 
-### Example:
+## Usage:
+
 ```javascript
 overscroll(() => 
-	console.log('Overscroll Detected')
+    console.log('Overscroll Detected')
 );
 ```
 
-
 ## Installation
 
-### Via jsDeliver (Recommended)
-
+### Via jsDeliver
 
 Add the following script tag to your HTML file:
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/overscrolljs@latest/overscroll.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/overscrolljs@latest/dist/overscroll.min.js"></script>
 ```
 
-### Via NPM
-
-Navigate to your project's directory and install the Overscroll, adding it to your package.json:
-
-	$ npm i -S overscrolljs
-
-### Via Yarn
+### Via NPM or [Yarn](https://yarnpkg.com)
 
 Navigate to your project's directory, and execute the following command:
 
-	$ yarn add overscrolljs
+```sh
+$ npm i -S overscrolljs
+```
 
-Then, embed the script in your HTML using a script tag:
+or
+
+```sh
+$ yarn add overscrolljs
+```
+
+Then import the file using a module loader like [Webpack](https://webpack.js.org/), [TypeScript](https://www.typescriptlang.org/), [Rollup](https://rollupjs.org/), and [Browserify](http://browserify.org/), or using [native ES Modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import):
+
+```javascript
+import overscroll from `overscrolljs`;
+```
+
+> **Note:** If you try to import the module using `requirejs` you will need to import it as
+```javascript
+var overscroll = require('overscroll.js').default;
+```
+
+Alternatively you can embed the script in your HTML using a script tag:
 ```html
-<script src="node_modules/overscrolljs/overscroll.min.js"></script>
+<script src="node_modules/overscrolljs/dist/overscroll.min.js"></script>
 ```
 ___
 
-### Contributing
+## Contributing
 
 [Check for open issues](https://github.com/bluzi/overscroll/issues) or add your own features by starting a pull request.
+
+### Building the Project
+
+An npm script compiles the typescript and generates a minified/uglified bundle.
+
+```
+$ npm run build
+```
