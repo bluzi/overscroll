@@ -1,26 +1,40 @@
 {
-  "name": "overscrolljs",
-  "version": "1.0.4",
-  "description": "Detect Mac touchpad overscroll on browser",
-  "main": "overscroll.js",
-  "scripts": {
-    "test": ""
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/bluzi/overscroll.git"
-  },
-  "keywords": [
-    "overscroll",
-    "mac",
-    "mabook",
-    "touchpad",
-    "scroll"
-  ],
-  "author": "Eliran Pe'er",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/bluzi/overscroll/issues"
-  },
-  "homepage": "https://github.com/bluzi/overscroll#readme"
+    "name": "overscrolljs",
+    "version": "1.1.0",
+    "description": "Detect Mac touchpad overscroll on browser",
+    "main": "dist/overscroll.umd.js",
+    "module": "dist/overscroll.js",
+    "scripts": {
+        "build:ts": "tsc",
+        "build:umd": "babel dist/overscroll.js > dist/overscroll.umd.js",
+        "build:uglify": "uglifyjs -o dist/overscroll.umd.min.js --compress --mangle -- dist/overscroll.umd.js",
+        "build": "npm run build:ts && npm run build:umd && npm run build:uglify",
+        "prepublishOnly": "npm run build"
+    },
+    "types": "dist/overscroll.d.ts",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/bluzi/overscroll.git"
+    },
+    "keywords": [
+        "overscroll",
+        "mac",
+        "mabook",
+        "touchpad",
+        "scroll"
+    ],
+    "author": "Eliran Pe'er",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/bluzi/overscroll/issues"
+    },
+    "homepage": "https://github.com/bluzi/overscroll#readme",
+    "devDependencies": {
+        "babel": "^6.23.0",
+        "babel-cli": "^6.26.0",
+        "babel-plugin-transform-es2015-modules-umd": "^6.24.1",
+        "del-cli": "^1.1.0",
+        "typescript": "^2.5.3",
+        "uglify-js": "^3.1.3"
+    }
 }
