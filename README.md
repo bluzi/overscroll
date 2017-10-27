@@ -40,6 +40,15 @@ Then, embed the script in your HTML using a script tag:
 ```
 ___
 
-### Contributing
+## Contributing
 
 [Check for open issues](https://github.com/bluzi/overscroll/issues) or add your own features by starting a pull request.
+
+## Author
+
+Eliran Pe'er - @bluzi
+
+## License
+
+This project is licensed under the MIT License.
+
